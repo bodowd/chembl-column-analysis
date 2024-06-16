@@ -1,0 +1,538 @@
+table_name,column_name,data_type
+assays,assay_id,bigint
+assays,doc_id,bigint
+assays,description,character varying
+assays,assay_type,character varying
+assays,assay_test_type,character varying
+assays,assay_category,character varying
+assays,assay_organism,character varying
+assays,assay_tax_id,bigint
+assays,assay_strain,character varying
+assays,assay_tissue,character varying
+assays,assay_cell_type,character varying
+assays,assay_subcellular_fraction,character varying
+assays,tid,bigint
+assays,relationship_type,character varying
+assays,confidence_score,smallint
+assays,curated_by,character varying
+assays,src_id,integer
+assays,src_assay_id,character varying
+assays,chembl_id,character varying
+assays,cell_id,bigint
+assays,bao_format,character varying
+assays,tissue_id,bigint
+assays,variant_id,bigint
+assays,aidx,character varying
+assay_class_map,ass_cls_map_id,bigint
+assay_class_map,assay_id,bigint
+assay_class_map,assay_class_id,bigint
+activity_stds_lookup,std_act_id,bigint
+activity_stds_lookup,standard_type,character varying
+activity_stds_lookup,definition,character varying
+activity_stds_lookup,standard_units,character varying
+activity_stds_lookup,normal_range_min,numeric
+activity_stds_lookup,normal_range_max,numeric
+activity_properties,ap_id,bigint
+activity_properties,activity_id,bigint
+activity_properties,type,character varying
+activity_properties,relation,character varying
+activity_properties,value,numeric
+activity_properties,units,character varying
+activity_properties,text_value,character varying
+activity_properties,standard_type,character varying
+activity_properties,standard_relation,character varying
+activity_properties,standard_value,numeric
+activity_properties,standard_units,character varying
+activity_properties,standard_text_value,character varying
+activity_properties,comments,character varying
+activity_properties,result_flag,smallint
+assay_parameters,assay_param_id,bigint
+assay_parameters,assay_id,bigint
+assay_parameters,type,character varying
+assay_parameters,relation,character varying
+assay_parameters,value,numeric
+assay_parameters,units,character varying
+assay_parameters,text_value,character varying
+assay_parameters,standard_type,character varying
+assay_parameters,standard_relation,character varying
+assay_parameters,standard_value,numeric
+assay_parameters,standard_units,character varying
+assay_parameters,standard_text_value,character varying
+assay_parameters,comments,character varying
+assay_type,assay_type,character varying
+assay_type,assay_desc,character varying
+bioassay_ontology,bao_id,character varying
+bioassay_ontology,label,character varying
+biotherapeutics,molregno,bigint
+biotherapeutics,description,character varying
+biotherapeutics,helm_notation,character varying
+atc_classification,who_name,character varying
+atc_classification,level1,character varying
+atc_classification,level2,character varying
+atc_classification,level3,character varying
+atc_classification,level4,character varying
+atc_classification,level5,character varying
+atc_classification,level1_description,character varying
+atc_classification,level2_description,character varying
+atc_classification,level3_description,character varying
+atc_classification,level4_description,character varying
+action_type,action_type,character varying
+action_type,description,character varying
+action_type,parent_type,character varying
+activities,activity_id,bigint
+activities,assay_id,bigint
+activities,doc_id,bigint
+activities,record_id,bigint
+activities,molregno,bigint
+activities,standard_relation,character varying
+activities,standard_value,numeric
+activities,standard_units,character varying
+activities,standard_flag,smallint
+activities,standard_type,character varying
+activities,activity_comment,character varying
+activities,data_validity_comment,character varying
+activities,potential_duplicate,smallint
+activities,pchembl_value,numeric
+activities,bao_endpoint,character varying
+activities,uo_units,character varying
+activities,qudt_units,character varying
+activities,toid,integer
+activities,upper_value,numeric
+activities,standard_upper_value,numeric
+activities,src_id,integer
+activities,type,character varying
+activities,relation,character varying
+activities,value,numeric
+activities,units,character varying
+activities,text_value,character varying
+activities,standard_text_value,character varying
+activities,action_type,character varying
+activity_smid,smid,bigint
+activity_supp_map,actsm_id,bigint
+activity_supp_map,activity_id,bigint
+activity_supp_map,smid,bigint
+activity_supp,as_id,bigint
+activity_supp,rgid,bigint
+activity_supp,smid,bigint
+activity_supp,type,character varying
+activity_supp,relation,character varying
+activity_supp,value,numeric
+activity_supp,units,character varying
+activity_supp,text_value,character varying
+activity_supp,standard_type,character varying
+activity_supp,standard_relation,character varying
+activity_supp,standard_value,numeric
+activity_supp,standard_units,character varying
+activity_supp,standard_text_value,character varying
+activity_supp,comments,character varying
+assay_classification,assay_class_id,bigint
+assay_classification,l1,character varying
+assay_classification,l2,character varying
+assay_classification,l3,character varying
+assay_classification,class_type,character varying
+assay_classification,source,character varying
+binding_sites,site_id,bigint
+binding_sites,site_name,character varying
+binding_sites,tid,bigint
+bio_component_sequences,component_id,bigint
+bio_component_sequences,component_type,character varying
+bio_component_sequences,description,character varying
+bio_component_sequences,sequence,text
+bio_component_sequences,sequence_md5sum,character varying
+bio_component_sequences,tax_id,bigint
+bio_component_sequences,organism,character varying
+biotherapeutic_components,biocomp_id,bigint
+biotherapeutic_components,molregno,bigint
+biotherapeutic_components,component_id,bigint
+compound_properties,molregno,bigint
+compound_properties,mw_freebase,numeric
+compound_properties,alogp,numeric
+compound_properties,hba,integer
+compound_properties,hbd,integer
+compound_properties,psa,numeric
+compound_properties,rtb,integer
+compound_properties,ro3_pass,character varying
+compound_properties,num_ro5_violations,smallint
+compound_properties,cx_most_apka,numeric
+compound_properties,cx_most_bpka,numeric
+compound_properties,cx_logp,numeric
+compound_properties,cx_logd,numeric
+compound_properties,molecular_species,character varying
+compound_properties,full_mwt,numeric
+compound_properties,aromatic_rings,integer
+compound_properties,heavy_atoms,integer
+compound_properties,qed_weighted,numeric
+compound_properties,mw_monoisotopic,numeric
+compound_properties,full_molformula,character varying
+compound_properties,hba_lipinski,integer
+compound_properties,hbd_lipinski,integer
+compound_properties,num_lipinski_ro5_violations,smallint
+compound_properties,np_likeness_score,numeric
+component_synonyms,compsyn_id,bigint
+component_synonyms,component_id,bigint
+component_synonyms,component_synonym,character varying
+component_synonyms,syn_type,character varying
+component_go,comp_go_id,bigint
+component_go,component_id,bigint
+component_go,go_id,character varying
+compound_structural_alerts,cpd_str_alert_id,bigint
+compound_structural_alerts,molregno,bigint
+compound_structural_alerts,alert_id,bigint
+component_sequences,component_id,bigint
+component_sequences,component_type,character varying
+component_sequences,accession,character varying
+component_sequences,sequence,text
+component_sequences,sequence_md5sum,character varying
+component_sequences,description,character varying
+component_sequences,tax_id,bigint
+component_sequences,organism,character varying
+component_sequences,db_source,character varying
+component_sequences,db_version,character varying
+cell_dictionary,cell_id,bigint
+cell_dictionary,cell_name,character varying
+cell_dictionary,cell_description,character varying
+cell_dictionary,cell_source_tissue,character varying
+cell_dictionary,cell_source_organism,character varying
+cell_dictionary,cell_source_tax_id,bigint
+cell_dictionary,clo_id,character varying
+cell_dictionary,efo_id,character varying
+cell_dictionary,cellosaurus_id,character varying
+cell_dictionary,cl_lincs_id,character varying
+cell_dictionary,chembl_id,character varying
+cell_dictionary,cell_ontology_id,character varying
+chembl_id_lookup,chembl_id,character varying
+chembl_id_lookup,entity_type,character varying
+chembl_id_lookup,entity_id,bigint
+chembl_id_lookup,status,character varying
+chembl_id_lookup,last_active,integer
+component_domains,compd_id,bigint
+component_domains,domain_id,bigint
+component_domains,component_id,bigint
+component_domains,start_position,bigint
+component_domains,end_position,bigint
+chembl_release,chembl_release_id,integer
+chembl_release,chembl_release,character varying
+chembl_release,creation_date,timestamp without time zone
+data_validity_lookup,data_validity_comment,character varying
+data_validity_lookup,description,character varying
+curation_lookup,curated_by,character varying
+curation_lookup,description,character varying
+compound_structures,molregno,bigint
+compound_structures,molfile,text
+compound_structures,standard_inchi,character varying
+compound_structures,standard_inchi_key,character varying
+compound_structures,canonical_smiles,character varying
+drug_mechanism,mec_id,bigint
+drug_mechanism,record_id,bigint
+drug_mechanism,molregno,bigint
+drug_mechanism,mechanism_of_action,character varying
+drug_mechanism,tid,bigint
+drug_mechanism,site_id,bigint
+drug_mechanism,action_type,character varying
+drug_mechanism,direct_interaction,smallint
+drug_mechanism,molecular_mechanism,smallint
+drug_mechanism,disease_efficacy,smallint
+drug_mechanism,mechanism_comment,character varying
+drug_mechanism,selectivity_comment,character varying
+drug_mechanism,binding_site_comment,character varying
+drug_mechanism,variant_id,bigint
+domains,domain_id,bigint
+domains,domain_type,character varying
+domains,source_domain_id,character varying
+domains,domain_name,character varying
+domains,domain_description,character varying
+defined_daily_dose,atc_code,character varying
+defined_daily_dose,ddd_units,character varying
+defined_daily_dose,ddd_admr,character varying
+defined_daily_dose,ddd_comment,character varying
+defined_daily_dose,ddd_id,bigint
+defined_daily_dose,ddd_value,numeric
+go_classification,go_id,character varying
+go_classification,parent_go_id,character varying
+go_classification,pref_name,character varying
+go_classification,class_level,smallint
+go_classification,aspect,character varying
+go_classification,path,character varying
+formulations,product_id,character varying
+formulations,ingredient,character varying
+formulations,strength,character varying
+formulations,record_id,bigint
+formulations,molregno,bigint
+formulations,formulation_id,bigint
+indication_refs,indref_id,bigint
+indication_refs,drugind_id,bigint
+indication_refs,ref_type,character varying
+indication_refs,ref_id,character varying
+indication_refs,ref_url,character varying
+frac_classification,frac_class_id,bigint
+frac_classification,active_ingredient,character varying
+frac_classification,level1,character varying
+frac_classification,level1_description,character varying
+frac_classification,level2,character varying
+frac_classification,level2_description,character varying
+frac_classification,level3,character varying
+frac_classification,level3_description,character varying
+frac_classification,level4,character varying
+frac_classification,level4_description,character varying
+frac_classification,level5,character varying
+frac_classification,frac_code,character varying
+hrac_classification,hrac_class_id,bigint
+hrac_classification,active_ingredient,character varying
+hrac_classification,level1,character varying
+hrac_classification,level1_description,character varying
+hrac_classification,level2,character varying
+hrac_classification,level2_description,character varying
+hrac_classification,level3,character varying
+hrac_classification,hrac_code,character varying
+drug_warning,warning_id,bigint
+drug_warning,record_id,bigint
+drug_warning,molregno,bigint
+drug_warning,warning_type,character varying
+drug_warning,warning_class,character varying
+drug_warning,warning_description,character varying
+drug_warning,warning_country,character varying
+drug_warning,warning_year,integer
+drug_warning,efo_term,character varying
+drug_warning,efo_id,character varying
+drug_warning,efo_id_for_warning_class,character varying
+drug_indication,drugind_id,bigint
+drug_indication,record_id,bigint
+drug_indication,molregno,bigint
+drug_indication,max_phase_for_ind,numeric
+drug_indication,mesh_id,character varying
+drug_indication,mesh_heading,character varying
+drug_indication,efo_id,character varying
+drug_indication,efo_term,character varying
+docs,doc_id,bigint
+docs,journal,character varying
+docs,year,integer
+docs,volume,character varying
+docs,issue,character varying
+docs,first_page,character varying
+docs,last_page,character varying
+docs,pubmed_id,bigint
+docs,doi,character varying
+docs,chembl_id,character varying
+docs,title,character varying
+docs,doc_type,character varying
+docs,authors,character varying
+docs,abstract,text
+docs,patent_id,character varying
+docs,ridx,character varying
+docs,src_id,integer
+docs,chembl_release_id,integer
+mechanism_refs,mecref_id,bigint
+mechanism_refs,mec_id,bigint
+mechanism_refs,ref_type,character varying
+mechanism_refs,ref_id,character varying
+mechanism_refs,ref_url,character varying
+metabolism,met_id,bigint
+metabolism,drug_record_id,bigint
+metabolism,substrate_record_id,bigint
+metabolism,metabolite_record_id,bigint
+metabolism,pathway_id,bigint
+metabolism,pathway_key,character varying
+metabolism,enzyme_name,character varying
+metabolism,enzyme_tid,bigint
+metabolism,met_conversion,character varying
+metabolism,organism,character varying
+metabolism,tax_id,bigint
+metabolism,met_comment,character varying
+molecule_atc_classification,mol_atc_id,bigint
+molecule_atc_classification,level5,character varying
+molecule_atc_classification,molregno,bigint
+molecule_hierarchy,molregno,bigint
+molecule_hierarchy,parent_molregno,bigint
+molecule_hierarchy,active_molregno,bigint
+molecule_synonyms,molregno,bigint
+molecule_synonyms,syn_type,character varying
+molecule_synonyms,molsyn_id,bigint
+molecule_synonyms,res_stem_id,bigint
+molecule_synonyms,synonyms,character varying
+organism_class,oc_id,bigint
+organism_class,tax_id,bigint
+organism_class,l1,character varying
+organism_class,l2,character varying
+organism_class,l3,character varying
+patent_use_codes,patent_use_code,character varying
+patent_use_codes,definition,character varying
+molecule_dictionary,molregno,bigint
+molecule_dictionary,pref_name,character varying
+molecule_dictionary,chembl_id,character varying
+molecule_dictionary,max_phase,numeric
+molecule_dictionary,therapeutic_flag,smallint
+molecule_dictionary,dosed_ingredient,smallint
+molecule_dictionary,structure_type,character varying
+molecule_dictionary,chebi_par_id,bigint
+molecule_dictionary,molecule_type,character varying
+molecule_dictionary,first_approval,integer
+molecule_dictionary,oral,smallint
+molecule_dictionary,parenteral,smallint
+molecule_dictionary,topical,smallint
+molecule_dictionary,black_box_warning,smallint
+molecule_dictionary,first_in_class,smallint
+molecule_dictionary,chirality,smallint
+molecule_dictionary,prodrug,smallint
+molecule_dictionary,inorganic_flag,smallint
+molecule_dictionary,usan_year,integer
+molecule_dictionary,availability_type,smallint
+molecule_dictionary,usan_stem,character varying
+molecule_dictionary,polymer_flag,smallint
+molecule_dictionary,usan_substem,character varying
+molecule_dictionary,usan_stem_definition,character varying
+molecule_dictionary,indication_class,character varying
+molecule_dictionary,withdrawn_flag,smallint
+molecule_dictionary,chemical_probe,smallint
+molecule_dictionary,natural_product,smallint
+molecule_frac_classification,mol_frac_id,bigint
+molecule_frac_classification,frac_class_id,bigint
+molecule_frac_classification,molregno,bigint
+molecule_hrac_classification,mol_hrac_id,bigint
+molecule_hrac_classification,hrac_class_id,bigint
+molecule_hrac_classification,molregno,bigint
+irac_classification,irac_class_id,bigint
+irac_classification,active_ingredient,character varying
+irac_classification,level1,character varying
+irac_classification,level1_description,character varying
+irac_classification,level2,character varying
+irac_classification,level2_description,character varying
+irac_classification,level3,character varying
+irac_classification,level3_description,character varying
+irac_classification,level4,character varying
+irac_classification,irac_code,character varying
+ligand_eff,activity_id,bigint
+ligand_eff,bei,numeric
+ligand_eff,sei,numeric
+ligand_eff,le,numeric
+ligand_eff,lle,numeric
+metabolism_refs,metref_id,bigint
+metabolism_refs,met_id,bigint
+metabolism_refs,ref_type,character varying
+metabolism_refs,ref_id,character varying
+metabolism_refs,ref_url,character varying
+predicted_binding_domains,predbind_id,bigint
+predicted_binding_domains,activity_id,bigint
+predicted_binding_domains,site_id,bigint
+predicted_binding_domains,prediction_method,character varying
+predicted_binding_domains,confidence,character varying
+product_patents,prod_pat_id,bigint
+product_patents,product_id,character varying
+product_patents,patent_no,character varying
+product_patents,patent_expire_date,timestamp without time zone
+product_patents,drug_substance_flag,smallint
+product_patents,drug_product_flag,smallint
+product_patents,patent_use_code,character varying
+product_patents,delist_flag,smallint
+product_patents,submission_date,timestamp without time zone
+research_companies,co_stem_id,bigint
+research_companies,res_stem_id,bigint
+research_companies,company,character varying
+research_companies,country,character varying
+research_companies,previous_company,character varying
+products,dosage_form,character varying
+products,route,character varying
+products,trade_name,character varying
+products,approval_date,timestamp without time zone
+products,ad_type,character varying
+products,oral,smallint
+products,topical,smallint
+products,parenteral,smallint
+products,black_box_warning,smallint
+products,applicant_full_name,character varying
+products,innovator_company,smallint
+products,product_id,character varying
+products,nda_type,character varying
+structural_alert_sets,alert_set_id,bigint
+structural_alert_sets,set_name,character varying
+structural_alert_sets,priority,smallint
+relationship_type,relationship_type,character varying
+relationship_type,relationship_desc,character varying
+source,src_id,integer
+source,src_description,character varying
+source,src_short_name,character varying
+research_stem,res_stem_id,bigint
+research_stem,research_stem,character varying
+protein_classification,protein_class_id,bigint
+protein_classification,parent_id,bigint
+protein_classification,pref_name,character varying
+protein_classification,short_name,character varying
+protein_classification,protein_class_desc,character varying
+protein_classification,definition,character varying
+protein_classification,class_level,bigint
+protein_class_synonyms,protclasssyn_id,bigint
+protein_class_synonyms,protein_class_id,bigint
+protein_class_synonyms,protein_class_synonym,character varying
+protein_class_synonyms,syn_type,character varying
+site_components,sitecomp_id,bigint
+site_components,site_id,bigint
+site_components,component_id,bigint
+site_components,domain_id,bigint
+site_components,site_residues,character varying
+target_type,target_type,character varying
+target_type,target_desc,character varying
+target_type,parent_type,character varying
+tissue_dictionary,tissue_id,bigint
+tissue_dictionary,uberon_id,character varying
+tissue_dictionary,pref_name,character varying
+tissue_dictionary,efo_id,character varying
+tissue_dictionary,chembl_id,character varying
+tissue_dictionary,bto_id,character varying
+tissue_dictionary,caloha_id,character varying
+warning_refs,warnref_id,bigint
+warning_refs,warning_id,bigint
+warning_refs,ref_type,character varying
+warning_refs,ref_id,character varying
+warning_refs,ref_url,character varying
+variant_sequences,variant_id,bigint
+variant_sequences,mutation,character varying
+variant_sequences,accession,character varying
+variant_sequences,version,bigint
+variant_sequences,isoform,bigint
+variant_sequences,sequence,text
+variant_sequences,organism,character varying
+variant_sequences,tax_id,bigint
+usan_stems,usan_stem_id,bigint
+usan_stems,stem,character varying
+usan_stems,subgroup,character varying
+usan_stems,annotation,character varying
+usan_stems,stem_class,character varying
+usan_stems,major_class,character varying
+structural_alerts,alert_id,bigint
+structural_alerts,alert_set_id,bigint
+structural_alerts,alert_name,character varying
+structural_alerts,smarts,character varying
+version,name,character varying
+version,creation_date,timestamp without time zone
+version,comments,character varying
+target_components,tid,bigint
+target_components,component_id,bigint
+target_components,targcomp_id,bigint
+target_components,homologue,smallint
+target_relations,tid,bigint
+target_relations,relationship,character varying
+target_relations,related_tid,bigint
+target_relations,targrel_id,bigint
+compound_records,record_id,bigint
+compound_records,molregno,bigint
+compound_records,doc_id,bigint
+compound_records,compound_key,character varying
+compound_records,compound_name,character varying
+compound_records,src_id,integer
+compound_records,src_compound_id,character varying
+compound_records,cidx,character varying
+confidence_score_lookup,confidence_score,smallint
+confidence_score_lookup,description,character varying
+confidence_score_lookup,target_mapping,character varying
+target_dictionary,tid,bigint
+target_dictionary,target_type,character varying
+target_dictionary,pref_name,character varying
+target_dictionary,tax_id,bigint
+target_dictionary,organism,character varying
+target_dictionary,chembl_id,character varying
+target_dictionary,species_group_flag,smallint
+component_class,component_id,bigint
+component_class,protein_class_id,bigint
+component_class,comp_class_id,bigint
+molecule_irac_classification,mol_irac_id,bigint
+molecule_irac_classification,irac_class_id,bigint
+molecule_irac_classification,molregno,bigint

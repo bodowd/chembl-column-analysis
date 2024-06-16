@@ -1,0 +1,8 @@
+data_type
+character varying
+numeric
+smallint
+bigint
+integer
+timestamp without time zone
+text
