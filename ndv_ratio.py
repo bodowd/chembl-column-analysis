@@ -55,7 +55,7 @@ with psycopg.connect("postgresql://postgres:example@localhost:5435/chembl_33") a
                         sql.SQL(
                             """
                         SELECT 
-                            COUNT(DISTINCT({})) / cast(COUNT({}) as decimal), 
+                            COUNT(DISTINCT({})) / NULLIF(cast(COUNT({}) as decimal),0), 
                             COUNT(DISTINCT({})), 
                             COUNT({})
                         FROM {}
