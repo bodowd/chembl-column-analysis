@@ -1,4 +1,3 @@
-from psycopg import sql
 import psycopg
 import csv
 
