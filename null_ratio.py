@@ -73,9 +73,3 @@ with open("null_ratio.csv", "w") as f:
                     ]
                     writer.writerow(row_to_write)
                     print(row_to_write)
-
-                    # for (count,) in null_count_cur:
-                    #     print(tbl, _type, c, count)
-                    # for (count,) in row_count_cur:
-                    #     print(tbl, _type, c, count)
-                    # print(null_count, row_count)
