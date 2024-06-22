@@ -7,7 +7,7 @@ assays,int,confidence_score,0,9
 assays,int,src_id,1,65
 assays,int,cell_id,1,5989
 assays,int,tissue_id,4,10000192
-assays,int,variant_id,-1,2671
+assays,int,variant_id,1,2671
 assays,string,description,4,3212
 assays,string,assay_type,1,1
 assays,string,assay_test_type,7,8
@@ -27,7 +27,7 @@ assay_class_map,int,ass_cls_map_id,1879821,2092606
 assay_class_map,int,assay_id,401,2263372
 assay_class_map,int,assay_class_id,2,580
 activity_stds_lookup,int,std_act_id,1,161
-activity_stds_lookup,float,normal_range_min,-10.000000000000,100.000000000000
+activity_stds_lookup,float,normal_range_min,0E-12,100.000000000000
 activity_stds_lookup,float,normal_range_max,1.000000000000,1000000000.000000000000
 activity_stds_lookup,string,standard_type,1,19
 activity_stds_lookup,string,definition,9,213
@@ -35,8 +35,8 @@ activity_stds_lookup,string,standard_units,1,22
 activity_properties,int,ap_id,1,9583390
 activity_properties,int,activity_id,17126237,24971698
 activity_properties,int,result_flag,0,1
-activity_properties,float,value,-137.972069898709,87428800512.0
-activity_properties,float,standard_value,-137.97,87428800512.0
+activity_properties,float,value,0.0,87428800512.0
+activity_properties,float,standard_value,0.0,87428800512.0
 activity_properties,string,type,1,45
 activity_properties,string,relation,1,2
 activity_properties,string,units,1,13
@@ -88,11 +88,11 @@ activities,int,standard_flag,0,1
 activities,int,potential_duplicate,0,1
 activities,int,toid,4781,20409
 activities,int,src_id,1,65
-activities,float,standard_value,-700000000.0,400000000000000000000000000000
-activities,float,pchembl_value,-10.61,14.92
-activities,float,upper_value,-94.0,19100000000000000
+activities,float,standard_value,0.0,400000000000000000000000000000
+activities,float,pchembl_value,0.02,14.92
+activities,float,upper_value,0.0,19100000000000000
 activities,float,standard_upper_value,,
-activities,float,value,-700000000.0,400000000000000000000000000000
+activities,float,value,0.0,400000000000000000000000000000
 activities,string,standard_relation,1,2
 activities,string,standard_units,1,60
 activities,string,standard_type,1,61
@@ -114,8 +114,8 @@ activity_supp_map,int,smid,1,1737438
 activity_supp,int,as_id,1,1807164
 activity_supp,int,rgid,1,56272
 activity_supp,int,smid,1,1737438
-activity_supp,float,value,-1.1,128320.0
-activity_supp,float,standard_value,-1.1,49000000.0
+activity_supp,float,value,0.0,128320.0
+activity_supp,float,standard_value,0.0,49000000.0
 activity_supp,string,type,1,80
 activity_supp,string,relation,1,1
 activity_supp,string,units,1,8
@@ -155,16 +155,16 @@ compound_properties,int,hba_lipinski,0,35
 compound_properties,int,hbd_lipinski,0,32
 compound_properties,int,num_lipinski_ro5_violations,0,4
 compound_properties,float,mw_freebase,4.00,10188.53
-compound_properties,float,alogp,-14.26,22.57
+compound_properties,float,alogp,0.00,22.57
 compound_properties,float,psa,0.00,595.22
-compound_properties,float,cx_most_apka,-20.03,14.00
+compound_properties,float,cx_most_apka,0.00,20.03
 compound_properties,float,cx_most_bpka,0.00,61.90
-compound_properties,float,cx_logp,-20.95,24.88
-compound_properties,float,cx_logd,-29.99,22.99
+compound_properties,float,cx_logp,0.00,24.88
+compound_properties,float,cx_logd,0.00,29.99
 compound_properties,float,full_mwt,4.00,12546.32
 compound_properties,float,qed_weighted,0.01,0.95
 compound_properties,float,mw_monoisotopic,4.0026,10183.5673
-compound_properties,float,np_likeness_score,-4.13,4.13
+compound_properties,float,np_likeness_score,0.00,4.13
 compound_properties,string,ro3_pass,1,1
 compound_properties,string,molecular_species,4,10
 compound_properties,string,full_molformula,1,25
@@ -200,7 +200,7 @@ cell_dictionary,string,cellosaurus_id,9,9
 cell_dictionary,string,cl_lincs_id,8,8
 cell_dictionary,string,chembl_id,13,13
 cell_dictionary,string,cell_ontology_id,10,10
-chembl_id_lookup,int,entity_id,-1,10000192
+chembl_id_lookup,int,entity_id,1,10000192
 chembl_id_lookup,int,last_active,8,33
 chembl_id_lookup,string,chembl_id,7,13
 chembl_id_lookup,string,entity_type,4,8
@@ -212,7 +212,6 @@ component_domains,int,start_position,1,14321
 component_domains,int,end_position,18,14427
 chembl_release,int,chembl_release_id,1,33
 chembl_release,string,chembl_release,8,9
-chembl_release,timestamp,creation_date,2009-09-03 00:00:00,2023-05-31 00:00:00
 data_validity_lookup,string,data_validity_comment,18,29
 data_validity_lookup,string,description,64,109
 curation_lookup,string,curated_by,6,12
@@ -230,7 +229,7 @@ drug_mechanism,int,site_id,248,38559
 drug_mechanism,int,direct_interaction,0,1
 drug_mechanism,int,molecular_mechanism,0,1
 drug_mechanism,int,disease_efficacy,0,1
-drug_mechanism,int,variant_id,-1,2608
+drug_mechanism,int,variant_id,1,2608
 drug_mechanism,string,mechanism_of_action,7,107
 drug_mechanism,string,action_type,5,29
 drug_mechanism,string,mechanism_comment,3,1299
@@ -298,12 +297,12 @@ drug_warning,string,efo_id_for_warning_class,11,11
 drug_indication,int,drugind_id,22606,144072
 drug_indication,int,record_id,1343055,3841910
 drug_indication,int,molregno,97,2782348
-drug_indication,float,max_phase_for_ind,-1.0,4.0
+drug_indication,float,max_phase_for_ind,0.0,4.0
 drug_indication,string,mesh_id,7,10
 drug_indication,string,mesh_heading,3,58
 drug_indication,string,efo_id,9,15
 drug_indication,string,efo_term,4,71
-docs,int,doc_id,-1,124917
+docs,int,doc_id,1,124917
 docs,int,year,1974,2023
 docs,int,pubmed_id,1534,36561077
 docs,int,src_id,0,65
@@ -365,17 +364,17 @@ molecule_dictionary,int,oral,0,1
 molecule_dictionary,int,parenteral,0,1
 molecule_dictionary,int,topical,0,1
 molecule_dictionary,int,black_box_warning,0,1
-molecule_dictionary,int,first_in_class,-1,1
-molecule_dictionary,int,chirality,-1,2
-molecule_dictionary,int,prodrug,-1,1
-molecule_dictionary,int,inorganic_flag,-1,1
+molecule_dictionary,int,first_in_class,0,1
+molecule_dictionary,int,chirality,0,2
+molecule_dictionary,int,prodrug,0,1
+molecule_dictionary,int,inorganic_flag,0,1
 molecule_dictionary,int,usan_year,1961,2022
-molecule_dictionary,int,availability_type,-2,2
+molecule_dictionary,int,availability_type,0,2
 molecule_dictionary,int,polymer_flag,0,1
 molecule_dictionary,int,withdrawn_flag,0,1
 molecule_dictionary,int,chemical_probe,0,1
 molecule_dictionary,int,natural_product,0,1
-molecule_dictionary,float,max_phase,-1.0,4.0
+molecule_dictionary,float,max_phase,0.5,4.0
 molecule_dictionary,string,pref_name,1,241
 molecule_dictionary,string,chembl_id,7,13
 molecule_dictionary,string,structure_type,3,4
@@ -404,7 +403,7 @@ ligand_eff,int,activity_id,31864,24971642
 ligand_eff,float,bei,0.83,406.96
 ligand_eff,float,sei,0.76,339.51
 ligand_eff,float,le,0.08,8.50
-ligand_eff,float,lle,-12.67,20.84
+ligand_eff,float,lle,0.00,20.84
 metabolism_refs,int,metref_id,39,13313
 metabolism_refs,int,met_id,119,2810
 metabolism_refs,string,ref_type,3,8
@@ -422,8 +421,6 @@ product_patents,int,delist_flag,0,1
 product_patents,string,product_id,18,18
 product_patents,string,patent_no,7,12
 product_patents,string,patent_use_code,3,6
-product_patents,timestamp,patent_expire_date,2022-01-02 00:00:00,2041-08-22 00:00:00
-product_patents,timestamp,submission_date,2010-05-12 00:00:00,2022-09-07 00:00:00
 research_companies,int,co_stem_id,1,812
 research_companies,int,res_stem_id,2,671
 research_companies,string,company,3,47
@@ -441,7 +438,6 @@ products,string,ad_type,2,5
 products,string,applicant_full_name,5,88
 products,string,product_id,18,18
 products,string,nda_type,1,1
-products,timestamp,approval_date,1982-01-01 00:00:00,2022-09-08 00:00:00
 structural_alert_sets,int,alert_set_id,1,6
 structural_alert_sets,int,priority,3,8
 structural_alert_sets,string,set_name,3,6
@@ -483,7 +479,7 @@ warning_refs,int,warning_id,1,3717
 warning_refs,string,ref_type,3,13
 warning_refs,string,ref_id,7,151
 warning_refs,string,ref_url,33,228
-variant_sequences,int,variant_id,-1,2671
+variant_sequences,int,variant_id,1,2671
 variant_sequences,int,version,1,6
 variant_sequences,int,isoform,1,4
 variant_sequences,int,tax_id,287,1111708
@@ -503,7 +499,6 @@ structural_alerts,string,alert_name,3,44
 structural_alerts,string,smarts,1,1168
 version,string,name,9,9
 version,string,comments,17,17
-version,timestamp,creation_date,2023-05-31 00:00:00,2023-05-31 00:00:00
 target_components,int,tid,1,120864
 target_components,int,component_id,1,20305
 target_components,int,targcomp_id,1,23610
@@ -514,7 +509,7 @@ target_relations,int,targrel_id,385604,434065
 target_relations,string,relationship,9,13
 compound_records,int,record_id,1,3902020
 compound_records,int,molregno,1,2783538
-compound_records,int,doc_id,-1,124917
+compound_records,int,doc_id,1,124917
 compound_records,int,src_id,1,65
 compound_records,string,compound_key,1,248
 compound_records,string,compound_name,1,3660

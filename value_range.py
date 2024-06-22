@@ -30,7 +30,7 @@ def compute_minmax_numeric(cur, column_name, table_name):
     cur.execute(
         sql.SQL(
             """
-                SELECT MIN({col}), MAX({col})
+                SELECT MIN(ABS({col})), MAX(ABS({col}))
                 FROM {tbl}
                 """
         ).format(col=sql.Identifier(column_name), tbl=sql.Identifier(table_name))
@@ -55,7 +55,7 @@ with open("value_range.csv", "w") as f:
                 for c in tables[tbl][_type]:
                     if _type == "string":
                         compute_minmax_bytelength(cur, c, tbl)
-                    else:
+                    elif _type != "timestamp":
                         compute_minmax_numeric(cur, c, tbl)
                     for min_val, max_val in cur:
                         row_to_write = [tbl, _type, c, min_val, max_val]
